@@ -36,7 +36,7 @@ body{
     align-items: center;
 
     padding: 1.5rem 0;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 /* LOGO */
@@ -124,9 +124,20 @@ body{
     justify-content: center;
 
     gap: 1.8rem;
-    border: 1px solid black;
-}
+    /* border: 1px solid black; */
 
+    animation: slidefromleft 1s ease forwards;
+}
+@keyframes slidefromleft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+}
 /* SMALL HEADING */
 
 .l1 p{
@@ -217,4 +228,38 @@ body{
     box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
 }
 
+.company-container{
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    /* border: 1px solid black; */
 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(243, 238, 238);
+    border-radius: 8px;
+}
+
+
+.company-images{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* border: 1px solid black; */
+    gap: 12rem;
+}
+
+.company-text{
+    color: grey;
+}
+.company-logo{
+    height: 2rem;
+    width: 2rem;
+    object-fit: cover;
+    color: grey;
+}
