@@ -20,8 +20,9 @@ body{
 /* MAIN CONTAINER */
 
 .main-container{
-    width: 80%;
+    width: 100%;
     margin: auto;
+    background-color:rgb(218, 201, 201);
 }
 
 /* =========================
@@ -306,8 +307,11 @@ body{
     border-radius: 2rem;
     padding: 3rem;
     color: white;
+    transition: transform 0.3s ease;
 }
-
+.card:hover{
+    transform: scale(1.05);
+}
 .card p{
     text-align: center;
 }
@@ -329,4 +333,52 @@ body{
 }
 #card6{
     background-color: rgb(164, 37, 164);
+}
+
+
+
+
+
+.testemonial-section{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.testemonials{
+    display: flex;
+    gap: 2rem;
+}
+
+.testemonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(215, 195, 195);
+    border-radius: 8px;
+    padding: 2rem;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.testemonial p{
+    text-align: center;
+    color: rgb(97, 67, 67);
+}
+
+.testemonial h4{
+    color: blueviolet;
+}
+
+.testemonial:hover{
+    transform: scale(1.05);
+}
+
+.testemonial img{
+    border-radius: 5rem;
 }
