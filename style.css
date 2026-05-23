@@ -20,7 +20,8 @@ body{
 /* MAIN CONTAINER */
 
 .main-container{
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 /* =========================
@@ -262,4 +263,70 @@ body{
     width: 2rem;
     object-fit: cover;
     color: grey;
+}
+
+
+.cards-section{
+    width: 80%;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.card-header{
+    color: rgb(119, 88, 88);
+}
+.card-para{
+    color: black;
+    width: 60%;
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.card img{
+    height: 2rem;
+    width: 2rem;
+    /* border-radius: 5px; */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 2rem;
+    padding: 3rem;
+    color: white;
+}
+
+.card p{
+    text-align: center;
+}
+
+#card1{
+    background-color: rgb(76, 76, 199);
+}
+#card2{
+    background-color: rgb(164, 70, 70);
+}
+#card3{
+    background-color: rgb(176, 176, 80);
+}
+#card4{
+    background-color: rgb(154, 70, 84);
+}
+#card5{
+    background-color: rgb(104, 161, 104);
+}
+#card6{
+    background-color: rgb(164, 37, 164);
 }
