@@ -530,3 +530,213 @@ body{
 .foot p{
     padding: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+        TABLET
+========================= */
+
+@media (max-width: 992px){
+
+    .navbar{
+        width: 90%;
+    }
+
+    .hero-section{
+        width: 90%;
+        gap: 2rem;
+    }
+
+    .l2 h1{
+        font-size: 3rem;
+    }
+
+    .company-images{
+        gap: 4rem;
+    }
+
+    .cards-section{
+        width: 90%;
+    }
+
+    .newsletter{
+        width: 90%;
+    }
+
+    .footer{
+        width: 90%;
+        gap: 2rem;
+    }
+
+}
+
+
+/* =========================
+        MOBILE
+========================= */
+
+@media (max-width: 768px){
+
+    /* NAVBAR */
+
+    .navbar{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .items{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* HERO SECTION */
+
+    .hero-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-box{
+        align-items: center;
+    }
+
+    .l2 h1{
+        font-size: 2.5rem;
+    }
+
+    .l3 p{
+        width: 100%;
+    }
+
+    .l4{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right-box img{
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* COMPANY SECTION */
+
+    .company-images{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+
+    /* CARDS */
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .card-para{
+        width: 100%;
+    }
+
+    /* TESTIMONIALS */
+
+    .testemonials{
+        flex-direction: column;
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .left img{
+        height: 300px;
+    }
+
+    .right{
+        padding: 2rem 1rem;
+    }
+
+    .form-details{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .left-footer{
+        width: 100%;
+    }
+
+    .right-footer{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+}
+
+
+
+/* =========================
+    SMALL MOBILE DEVICES
+========================= */
+
+@media (max-width: 480px){
+
+    .title h1{
+        font-size: 1.7rem;
+    }
+
+    .l2 h1{
+        font-size: 2rem;
+    }
+
+    .card{
+        padding: 2rem;
+    }
+
+    .company-images{
+        grid-template-columns: 1fr;
+    }
+
+    .right-footer{
+        flex-direction: column;
+    }
+
+}
