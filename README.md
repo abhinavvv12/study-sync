@@ -12,3 +12,6 @@ A responsive frontend landing page for an educational platform built using HTML 
 - HTML5
 - CSS3
 - GitHub Pages
+
+## Live Demo
+https://abhinavvv12.github.io/study-sync/
